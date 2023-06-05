@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-block py-3 px-5 bg-focus text-white1 rounded-lg transition duration-300 hover:bg-focusHover focus:outline-none;
+  }
+
+  .link-primary {
+    @apply text-focus transition duration-300 hover:text-focusHover;
+  }
+
+  .btn-slider {
+    @apply p-2 bg-white1 text-focus text-lg rounded-full h-10 w-10 drop-shadow-md flex items-center justify-center transition hover:bg-gray-50;
+  }
+
+  .btn-slider-disabled{
+    @apply !text-disabled hover:bg-white1;
+  }
+
+  .card-btn-slider {
+    @apply bg-white1 text-black4 text-base rounded-full absolute top-1/2 -translate-y-1/2 h-10 w-10 drop-shadow-md transition hover:bg-gray-50;
+  }
+
+  .form-input{
+    @apply border border-solid border-border rounded-lg p-4 placeholder-black4 w-full outline-none transition focus:border-neutral-400;
+  }
+
+  .form-radio{
+    @apply h-12 w-12 flex flex-col items-center justify-center rounded-full bg-white1 drop-shadow-md select-none cursor-pointer transition;
+  }
+}
